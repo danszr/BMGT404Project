@@ -5,3 +5,4 @@ def names():
 	for i in range(party_num):
 		name = input("Enter the name of the next party member: ")
 		party.append(name)
+#testcomment
