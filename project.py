@@ -12,7 +12,6 @@ def names():
 	print(party_member)
 
 def payment_options():
-	payer_name = input("Who is on this payment? ")
 	payment_list = []
 	while True:
 		payment_name = input("Enter a name for your payment, or 'quit' to quit: ")
