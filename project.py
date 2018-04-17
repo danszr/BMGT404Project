@@ -9,5 +9,3 @@ def names():
 def payment_choice():
 	payer_amount = input("How many people are on this payment? ")
 	choice = input("How would you like to split the bill?\n1) Equal split\n2) Dollar split\n3) Percentage split\n")
-
-payment_choice()
