@@ -26,14 +26,23 @@ def payment_options():
 		payment_data = [payment_date, payment_name, payment_amount]
 		payment_list.append(payment_data)
 
-		payer_number = int(input("How many people are on this payment? "))
+		payment_people = int(input("How many people are on this payment? "))
+		for i in range(payment_person_name):
+			payment_person_name = input(f"Who is person #{i+1}? ")
+		payer_number = int(input("How many people actually paid? "))
+		payers = {}
 		for i in range(payer_number):
 			payer_name = input(f"Who is payer #{i+1}? ")
+			payer_amount = float(input(f"How much did {payer_name} pay? "))
+			payers[payer_name] = payer_amount
 
-def split():
+		split(payment_amount, payer_number, payer_name)
+
+def split(payment_amount, payer_number, payer_name):
 	while True 
 		payment_choice = input("How would you like to split the bill?\n1) Equal split\n2) Dollar split\n3) Percentage split\n")
 		if payment_choice == 1:
+			payment_per_person = payment_amount/payer_number
 			
 
 		elif payment_choice == 2:
