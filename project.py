@@ -42,10 +42,11 @@ def split(payment_amount, payer_number, payer_name, payers):
 		payment_choice = input("How would you like to split the bill?\n1) Equal split\n2) Dollar split\n3) Percentage split\n")
 		if payment_choice == 1:
 			sum = 0
-			payment_per_person = payment_amount/payment_people
+			payment_per_person = payment_amount/payer_number
 			for name, amount in payers.items():
 				payers[name] = amount - payment_per_person
 				sum += payers[name]
+			print(payers[payer_name])
 
 			for giver_name, giver_amount in payers.items():
 				while payers[giver_name] < 0:
