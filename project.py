@@ -38,7 +38,7 @@ def payment_options():
 		split(payment_amount, payer_number, payer_name)
 
 def split(payment_amount, payer_number, payer_name, payers):
-	while True 
+	while True:
 		payment_choice = input("How would you like to split the bill?\n1) Equal split\n2) Dollar split\n3) Percentage split\n")
 		if payment_choice == 1:
 			sum = 0
