@@ -15,8 +15,8 @@ def payment_options():
 	payment_list = []
 	#while True:
 	payment_name = input("Enter a name for your payment, or 'quit' to quit: ")
-	if payment_name.lower() == 'quit':
-		break
+	#if payment_name.lower() == 'quit':
+		#break
 	
 	payment_year = int(input("Enter the year of your payment: "))
 	payment_month = int(input("Enter the month of your payment: "))
