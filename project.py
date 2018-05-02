@@ -23,9 +23,6 @@ def payment_options():
 		payment_day = int(input("Enter the day of your payment: "))
 		payment_date = date(payment_year, payment_month, payment_day)
 
-		payment_data = [payment_date, payment_name, payment_amount]
-		payment_list.append(payment_data)
-
 		payers = {}
 		payment_amount = 0.0
 		payer_number = int(input("How many people are on the payment? "))
@@ -34,6 +31,9 @@ def payment_options():
 			payer_amount = float(input(f"How much did {payer_name} pay? $"))
 			payers[payer_name] = payer_amount
 			payment_amount += payer_amount
+
+		payment_data = [payment_date, payment_name, payment_amount]
+		payment_list.append(payment_data)
 
 		split(payment_amount, payer_number, payer_name)
 
