@@ -38,16 +38,16 @@ def payment_options():
 		split(payment_amount, payer_number, payer_name, payers)
 
 def split(payment_amount, payer_number, payer_name, payers):
-	payment_choice = 0
-	while payment_choice != 1 and payment_choice != 2 and payment_choice != 3:
-		payment_choice = input("\nHow would you like to split the bill?\n1) Equal split\n2) Dollar split\n3) Percentage split\n")
-		if payment_choice == 1:
-			sum = 0
-			payment_per_person = payment_amount/payer_number
-			for name, amount in payers.items():
-				payers[name] = amount - payment_per_person
-				sum += payers[name]
-			print(payers[payer_name])
+	#payment_choice = 0
+	#while payment_choice != 1 and payment_choice != 2 and payment_choice != 3:
+	payment_choice = input("\nHow would you like to split the bill?\n1) Equal split\n2) Dollar split\n3) Percentage split\n")
+	if payment_choice == 1:
+		sum = 0
+		payment_per_person = payment_amount/payer_number
+		for name, amount in payers.items():
+			payers[name] = amount - payment_per_person
+			sum += payers[name]
+		print(payers[payer_name])
 
 payment_options()
 split(payment_amount, payer_number, payer_name, payers)
