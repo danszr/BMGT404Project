@@ -50,7 +50,6 @@ def split(payment_amount, payer_number, payer_name, payers):
 		print(payers[payer_name])
 
 payment_options()
-split(payment_amount, payer_number, payer_name, payers)
 
 #			for giver_name, giver_amount in payers.items():
 #				while payers[giver_name] < 0:
