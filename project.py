@@ -35,7 +35,7 @@ def payment_options():
 		payment_data = [payment_date, payment_name, payment_amount]
 		payment_list.append(payment_data)
 
-		split(payment_amount, payer_number, payer_name)
+		split(payment_amount, payer_number, payer_name, payers)
 
 def split(payment_amount, payer_number, payer_name, payers):
 	while True:
