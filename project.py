@@ -13,29 +13,29 @@ def names():
 
 def payment_options():
 	payment_list = []
-	while True:
-		payment_name = input("Enter a name for your payment, or 'quit' to quit: ")
-		if payment_name.lower() == 'quit':
-			break
-		
-		payment_year = int(input("Enter the year of your payment: "))
-		payment_month = int(input("Enter the month of your payment: "))
-		payment_day = int(input("Enter the day of your payment: "))
-		payment_date = date(payment_year, payment_month, payment_day)
+	#while True:
+	payment_name = input("Enter a name for your payment, or 'quit' to quit: ")
+	if payment_name.lower() == 'quit':
+		break
+	
+	payment_year = int(input("Enter the year of your payment: "))
+	payment_month = int(input("Enter the month of your payment: "))
+	payment_day = int(input("Enter the day of your payment: "))
+	payment_date = date(payment_year, payment_month, payment_day)
 
-		payers = {}
-		payment_amount = 0.0
-		payer_number = int(input("How many people are on the payment? "))
-		for i in range(payer_number):
-			payer_name = input(f"Who is person #{i+1}? ")
-			payer_amount = float(input(f"How much did {payer_name} pay? $"))
-			payers[payer_name] = payer_amount
-			payment_amount += payer_amount
+	payers = {}
+	payment_amount = 0.0
+	payer_number = int(input(f"\nHow many people are on the payment? "))
+	for i in range(payer_number):
+		payer_name = input(f"Who is person #{i+1}? ")
+		payer_amount = float(input(f"How much did {payer_name} pay? $"))
+		payers[payer_name] = payer_amount
+		payment_amount += payer_amount
 
-		payment_data = [payment_date, payment_name, payment_amount]
-		payment_list.append(payment_data)
+	payment_data = [payment_date, payment_name, payment_amount]
+	payment_list.append(payment_data)
 
-		split(payment_amount, payer_number, payer_name, payers)
+	split(payment_amount, payer_number, payer_name, payers)
 
 def split(payment_amount, payer_number, payer_name, payers):
 	#payment_choice = 0
