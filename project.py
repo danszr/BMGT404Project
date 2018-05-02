@@ -48,19 +48,19 @@ def split(payment_amount, payer_number, payer_name, payers):
 				sum += payers[name]
 			print(payers[payer_name])
 
-			for giver_name, giver_amount in payers.items():
-				while payers[giver_name] < 0:
-					for receiver_name, receiver_amount in payers.items():
-						if payers[receiver_name] = 0:
-							
-					
-
-		elif payment_choice == 2:
-			
-
-		elif payment_choice == 3:
-			
-
-		else:
-			print("That is not an option. Please choose a different option.")
-			continue
+#			for giver_name, giver_amount in payers.items():
+#				while payers[giver_name] < 0:
+#					for receiver_name, receiver_amount in #payers.items():
+#						if payers[receiver_name] = 0:
+#							
+#					
+#
+#		elif payment_choice == 2:
+#			
+#
+#		elif payment_choice == 3:
+#			
+#
+#		else:
+#			print("That is not an option. Please choose a different option.")
+#			continue
