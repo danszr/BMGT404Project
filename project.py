@@ -47,7 +47,7 @@ def split(payment_amount, payer_number, payer_name, payers):
 		for name, amount in payers.items():
 			payers[name] = amount - payment_per_person
 			sum += payers[name]
-		print(payers[payer_name])
+		print(payers)
 
 payment_options()
 
